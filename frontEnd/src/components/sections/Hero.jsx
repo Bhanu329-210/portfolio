@@ -3,6 +3,7 @@ import gsap from 'gsap';
 import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 import { SiLeetcode } from 'react-icons/si';
 import { AnimatedHeroSection } from '../ui/animated-hero-section';
+import { InteractiveHoverButton } from '../ui/interactive-hover-button';
 import LightRays from '../ui/LightRays';
 
 const Hero = () => {
@@ -81,15 +82,15 @@ const Hero = () => {
                         </a>
                     </div>
 
-                    <a
-                        href="https://wa.me/918500292426"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-8 py-4 bg-white text-black font-semibold rounded-full hover:bg-blue-500 hover:text-white transition-all duration-300 transform hover:scale-105"
+                    <InteractiveHoverButton
+                        onClick={() => window.open("https://wa.me/918500292426", "_blank")}
+                        className="text-white border-white/20 hover:bg-blue-500 hover:text-white transition-colors"
                     >
-                        <FaWhatsapp size={20} />
-                        Let's talk
-                    </a>
+                        <span className="flex items-center gap-2">
+                            <FaWhatsapp size={20} />
+                            Let's talk
+                        </span>
+                    </InteractiveHoverButton>
                 </div>
             </div>
 

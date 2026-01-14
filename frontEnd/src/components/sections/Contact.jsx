@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { ContactCard } from '@/components/ui/contact-card';
+import { InteractiveHoverButton } from '@/components/ui/interactive-hover-button';
 import { MailIcon, PhoneIcon, MapPinIcon, Loader2, Sparkles, Send } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
@@ -169,28 +170,28 @@ const Contact = () => {
                         </div>
 
                         <div className="pt-2">
-                            <Button
+                            <InteractiveHoverButton
                                 className={cn(
-                                    "w-full text-white font-medium transition-all duration-300 shadow-md hover:shadow-lg",
-                                    status === 'success' ? "bg-green-600 hover:bg-green-700 shadow-green-900/20" : "bg-blue-600 hover:bg-blue-700 shadow-blue-900/20"
+                                    "w-full flex justify-center text-white border-white/20 hover:bg-blue-500",
+                                    status === 'success' && "bg-green-600 hover:bg-green-700"
                                 )}
                                 type="submit"
                                 disabled={status === 'loading' || status === 'success'}
                             >
                                 {status === 'loading' ? (
-                                    <>
+                                    <span className="flex items-center gap-2">
                                         <Loader2 className="mr-2 h-4 w-4 animate-spin" />
                                         Sending...
-                                    </>
+                                    </span>
                                 ) : status === 'success' ? (
                                     'Message Sent Successfully!'
                                 ) : (
-                                    <>
+                                    <span className="flex items-center gap-2">
                                         <Send className="mr-2 h-4 w-4" />
                                         Let's connect
-                                    </>
+                                    </span>
                                 )}
-                            </Button>
+                            </InteractiveHoverButton>
 
                             {status === 'error' && (
                                 <p className="text-red-400 text-sm text-center mt-3 animate-pulse bg-red-900/20 py-2 rounded border border-red-500/20">
