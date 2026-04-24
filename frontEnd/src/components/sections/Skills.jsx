@@ -66,7 +66,7 @@ const Skills = () => {
             <div className="max-w-6xl mx-auto relative z-10 w-full">
                 <div className="text-center mb-16 space-y-4">
                     <div className="flex items-center justify-center gap-2 reveal">
-                        <span className="text-sm font-bold text-blue-500 uppercase tracking-widest">
+                        <span className="text-sm font-bold text-yellow-400 uppercase tracking-widest">
                             My Toolbox
                         </span>
                     </div>
@@ -82,7 +82,7 @@ const Skills = () => {
                     {skills.map((skill, index) => (
                         <div
                             key={index}
-                            className="skill-icon-card group relative w-24 h-24 flex flex-col items-center justify-center gap-3 rounded-2xl bg-black/40 border border-white/10 hover:border-blue-500/50 hover:bg-white/5 hover:-translate-y-1 transition-transform duration-300 cursor-pointer"
+                            className="skill-icon-card group relative w-24 h-24 flex flex-col items-center justify-center gap-3 rounded-2xl bg-black/40 border border-white/10 hover:border-yellow-400/50 hover:bg-white/5 hover:-translate-y-1 transition-transform duration-300 cursor-pointer"
                         >
                             <div className="text-3xl md:text-4xl group-hover:scale-110 transition-transform duration-300 filter group-hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]">
                                 {skill.icon}

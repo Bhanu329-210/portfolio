@@ -115,7 +115,7 @@ const Contact = () => {
                                 onChange={handleChange}
                                 required
                                 disabled={status === 'loading'}
-                                className="bg-white/5 border-white/10 text-white focus:border-blue-500/50 focus:bg-white/10 transition-all font-light"
+                                className="bg-white/5 border-white/10 text-white focus:border-yellow-400/50 focus:bg-white/10 transition-all font-light"
                                 placeholder="Your Name"
                             />
                         </div>
@@ -128,7 +128,7 @@ const Contact = () => {
                                 onChange={handleChange}
                                 required
                                 disabled={status === 'loading'}
-                                className="bg-white/5 border-white/10 text-white focus:border-blue-500/50 focus:bg-white/10 transition-all font-light"
+                                className="bg-white/5 border-white/10 text-white focus:border-yellow-400/50 focus:bg-white/10 transition-all font-light"
                                 placeholder="your@email.com"
                             />
                         </div>
@@ -141,7 +141,7 @@ const Contact = () => {
                                     size="sm"
                                     onClick={handleAiAutofill}
                                     disabled={isAiLoading || status === 'loading'}
-                                    className="text-xs text-blue-400 hover:text-blue-300 hover:bg-blue-500/10 h-6 px-2 gap-1.5 disabled:opacity-50 transition-colors"
+                                    className="text-xs text-yellow-400 hover:text-yellow-300 hover:bg-yellow-400/10 h-6 px-2 gap-1.5 disabled:opacity-50 transition-colors"
                                     title="Auto-fill with AI suggestion"
                                 >
                                     <Sparkles className="w-3 h-3" />
@@ -163,7 +163,7 @@ const Contact = () => {
                                     onChange={handleChange}
                                     required
                                     disabled={status === 'loading'}
-                                    className="bg-white/5 border-white/10 text-white focus:border-blue-500/50 focus:bg-white/10 min-h-[120px] transition-all font-light"
+                                    className="bg-white/5 border-white/10 text-white focus:border-yellow-400/50 focus:bg-white/10 min-h-[120px] transition-all font-light"
                                     placeholder="How can I help you?"
                                 />
                             )}
@@ -172,7 +172,7 @@ const Contact = () => {
                         <div className="pt-2">
                             <InteractiveHoverButton
                                 className={cn(
-                                    "w-full flex justify-center text-white border-white/20 hover:bg-blue-500",
+                                    "w-full flex justify-center text-white border-white/20 hover:bg-yellow-400",
                                     status === 'success' && "bg-green-600 hover:bg-green-700"
                                 )}
                                 type="submit"

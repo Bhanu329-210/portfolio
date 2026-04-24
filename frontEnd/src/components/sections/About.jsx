@@ -30,7 +30,7 @@ const About = () => {
 
     const features = [
         {
-            icon: <Code2 className="w-6 h-6 text-blue-400" />,
+            icon: <Code2 className="w-6 h-6 text-yellow-400" />,
             title: "Modern Tech",
             desc: "React, Next.js, Node.js ecosystem"
         },
@@ -60,13 +60,13 @@ const About = () => {
                 <div className="space-y-8">
                     <div className="space-y-4">
                         <div className="flex items-center gap-2 reveal">
-                            <div className="h-px w-8 bg-blue-500"></div>
-                            <span className="text-sm font-bold text-blue-500 uppercase tracking-widest">
+                            <div className="h-px w-8 bg-yellow-400"></div>
+                            <span className="text-sm font-bold text-yellow-400 uppercase tracking-widest">
                                 About Me
                             </span>
                         </div>
                         <h3 className="text-4xl md:text-5xl font-bold font-display text-white leading-tight reveal">
-                            Crafting digital experiences with <span className="text-blue-500">passion</span>.
+                            Crafting digital experiences with <span className="text-yellow-400">passion</span>.
                         </h3>
                     </div>
 
@@ -83,7 +83,7 @@ const About = () => {
                         <div className="bg-white/5 border border-white/10 px-6 py-3 rounded-full backdrop-blur-sm hover:bg-white/10 transition-colors duration-300">
                             <span className="text-white font-medium">Bhanu Prakash</span>
                         </div>
-                        <div className="bg-blue-500/10 border border-blue-500/20 px-6 py-3 rounded-full backdrop-blur-sm text-blue-400 font-medium">
+                        <div className="bg-yellow-400/10 border border-yellow-400/20 px-6 py-3 rounded-full backdrop-blur-sm text-yellow-400 font-medium">
                             Full Stack Dev
                         </div>
                     </div>

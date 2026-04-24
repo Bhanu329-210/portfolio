@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import Lenis from 'lenis';
-import Navbar from './components/layout/Navbar';
 import Hero from './components/sections/Hero';
 import About from './components/sections/About';
 import Skills from './components/sections/Skills';
@@ -40,8 +39,6 @@ function App() {
     <div className="relative text-white font-sans antialiased overflow-x-hidden">
       {/* 3D Background */}
       <Background />
-
-      <Navbar />
 
       <main className="relative z-10 flex flex-col gap-0">
         <Hero />

@@ -106,14 +106,14 @@ const Projects = () => {
             {/* Title */}
             <div className="mb-6 md:mb-12 text-center z-10 flex flex-col items-center gap-2 md:gap-4">
                 <div className="flex items-center gap-2">
-                    <div className="h-px w-8 bg-blue-500"></div>
-                    <span className="text-sm font-bold text-blue-500 uppercase tracking-widest">
+                    <div className="h-px w-8 bg-yellow-400"></div>
+                    <span className="text-sm font-bold text-yellow-400 uppercase tracking-widest">
                         Selected Works
                     </span>
-                    <div className="h-px w-8 bg-blue-500"></div>
+                    <div className="h-px w-8 bg-yellow-400"></div>
                 </div>
                 <h1 className="text-4xl md:text-5xl font-bold font-display text-white leading-tight">
-                    Explore My <span className="text-blue-500">Projects</span>
+                    Explore My <span className="text-yellow-400">Projects</span>
                 </h1>
                 <p className="text-neutral-400 max-w-lg">
                     Navigate the rail to view details of my recent work. Click on any project to see more information.
