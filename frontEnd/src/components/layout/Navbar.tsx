@@ -1,6 +1,5 @@
-import { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import { useState } from 'react';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -22,11 +21,12 @@ const Navbar = () => {
         { name: 'Contact', href: '#contact' },
     ];
 
-    const handleNavClick = (e, href) => {
+    const handleNavClick = (e: React.MouseEvent, href: string) => {
         e.preventDefault();
         setIsOpen(false);
-        if (window.lenis) {
-            window.lenis.scrollTo(href);
+        const lenis = (window as any).lenis;
+        if (lenis) {
+            lenis.scrollTo(href);
         } else {
             const element = document.querySelector(href);
             if (element) {
@@ -37,7 +37,7 @@ const Navbar = () => {
 
     return (
         <nav
-            className={`fixed left-1/2 -translate-x-1/2 z-50 transition-all duration-300 w-[90%] md:w-fit ${scrolled ? 'top-4' : 'top-6'
+            className={`fixed left-1/2 -translate-x-1/2 z-50 transition-all duration-300 w-[90%] md:max-w-7xl ${scrolled ? 'top-4' : 'top-6'
                 }`}
         >
             <div className="bg-black/30 backdrop-blur-xl border border-white/10 rounded-full px-6 py-3 shadow-2xl flex justify-between items-center md:gap-12">

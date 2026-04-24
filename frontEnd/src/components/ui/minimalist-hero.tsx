@@ -76,7 +76,7 @@ export const MinimalistHero = ({
       )}
     >
       {/* Header */}
-      <header className="absolute top-8 left-8 right-8 z-50 flex items-center justify-between md:relative md:top-0 md:left-0 md:right-0 md:max-w-7xl">
+      <header className="absolute top-8 left-8 right-8 z-50 flex items-center justify-between md:relative md:top-0 md:w-full md:max-w-7xl">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
