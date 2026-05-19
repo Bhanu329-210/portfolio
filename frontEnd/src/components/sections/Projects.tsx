@@ -3,33 +3,10 @@ import { FocusRail, FocusRailItem } from "../ui/focus-rail";
 import { BGPattern } from "../ui/bg-pattern";
 import { ProjectDetails } from "../ui/project-details";
 
-import { FaReact, FaNodeJs, FaShieldAlt, FaUserLock, FaDatabase, FaCss3Alt, FaBootstrap } from "react-icons/fa";
-import { SiJavascript, SiTypescript, SiTailwindcss, SiRecoil, SiPostgresql, SiPrisma, SiExpress, SiRedis, SiVite, SiReactrouter, SiJsonwebtokens } from "react-icons/si";
-import { TbApi } from "react-icons/tb";
+import { FaReact, FaNodeJs } from "react-icons/fa";
+import { SiTypescript, SiTailwindcss, SiRecoil, SiPostgresql, SiPrisma, SiExpress, SiRedis, SiVite, SiFramer, SiMongodb } from "react-icons/si";
 
 import synapstoreImg from "@/assets/projects/synapstore.png";
-import jobbyImg from "@/assets/projects/jobby.png";
-import nxtwatchImg from "@/assets/projects/nxtwatch.png";
-import nxttrendzImg from "@/assets/projects/nxttrendz.png";
-
-const commonTechTags = [
-    "React JS", "JavaScript", "CSS", "Bootstrap", "Routing",
-    "REST API Calls", "Local Storage", "JWT Token",
-    "Authorization", "Authentication"
-];
-
-const commonTechIcons = [
-    <FaReact key="react" className="text-blue-400" />,
-    <SiJavascript key="js" className="text-yellow-400" />,
-    <FaCss3Alt key="css" className="text-blue-500" />,
-    <FaBootstrap key="bootstrap" className="text-purple-600" />,
-    <SiReactrouter key="router" className="text-red-500" />,
-    <TbApi key="api" className="text-green-500" />,
-    <FaDatabase key="db" className="text-gray-400" />,
-    <SiJsonwebtokens key="jwt" className="text-pink-500" />,
-    <FaShieldAlt key="authz" className="text-emerald-400" />,
-    <FaUserLock key="authn" className="text-orange-400" />
-];
 
 const synapStoreTags = [
     "React 18", "TypeScript", "TailwindCSS", "Node.js", "Express", "PostgreSQL", "Prisma", "Redis", "Recoil"
@@ -48,6 +25,30 @@ const synapStoreIcons = [
     <SiRedis key="redis" className="text-red-500" />
 ];
 
+const movieMukkaluTags = [
+    "React 19", "Vite", "Framer Motion", "Tailwind CSS", "Node.js", "Express", "MongoDB", "Mongoose", "Razorpay"
+];
+
+const movieMukkaluIcons = [
+    <FaReact key="react" className="text-blue-400" />,
+    <SiVite key="vite" className="text-purple-500" />,
+    <SiFramer key="framer" className="text-pink-500" />,
+    <SiTailwindcss key="tailwind" className="text-cyan-400" />,
+    <FaNodeJs key="node" className="text-green-500" />,
+    <SiExpress key="express" className="text-white" />,
+    <SiMongodb key="mongodb" className="text-green-600" />,
+];
+
+const unizTags = [
+    "React", "TypeScript", "Tailwind CSS", "Vite"
+];
+
+const unizIcons = [
+    <FaReact key="react" className="text-blue-400" />,
+    <SiVite key="vite" className="text-purple-500" />,
+    <SiTypescript key="ts" className="text-blue-600" />,
+    <SiTailwindcss key="tailwind" className="text-cyan-400" />
+];
 
 const projects: FocusRailItem[] = [
     {
@@ -63,37 +64,26 @@ const projects: FocusRailItem[] = [
     },
     {
         id: 2,
-        title: "Jobby",
-        description: "A full stack job searching platform",
-        longDescription: "Jobby provides a comprehensive job search experience with advanced filtering, user authentication, and profile management capabilities.",
-        meta: "Job Portal",
-        tags: commonTechTags,
-        techIcons: commonTechIcons,
-        imageSrc: jobbyImg,
-        href: "https://joby.ccbp.tech",
+        title: "Movie Mukkalu",
+        description: "A premium movie ticket booking application",
+        longDescription: "Movie Mukkalu is a premium movie ticket booking application designed for high-concurrency environments. It features a real-time seat reservation system, atomic database locking, and seamless payment integration.",
+        meta: "Ticket Booking",
+        tags: movieMukkaluTags,
+        techIcons: movieMukkaluIcons,
+        imageSrc: "https://res.cloudinary.com/diipfzmyj/image/upload/v1779179928/Screenshot_2026-05-19_at_14.08.40_a44zdr.png",
+        href: "https://www.moviemokkalu.app",
     },
     {
         id: 3,
-        title: "Nxtwatch",
-        description: "An YouTube clone with CRUD operations",
-        longDescription: "A fully functional video streaming platform mimicking YouTube's core features including video playback, search, and theme toggling.",
-        meta: "Streaming",
-        tags: commonTechTags,
-        techIcons: commonTechIcons,
-        imageSrc: nxtwatchImg,
-        href: "https://nxtwatch.ccbp.tech",
-    },
-    {
-        id: 4,
-        title: "NxtTrendz",
-        description: "An ecommerce shopping platform",
-        longDescription: "NxtTrendz is a modern e-commerce solution featuring product listings, cart management, and a seamless checkout process.",
-        meta: "E-Commerce",
-        tags: commonTechTags,
-        techIcons: commonTechIcons,
-        imageSrc: nxttrendzImg,
-        href: "https://nxtz.ccbp.tech",
-    },
+        title: "UniZ",
+        description: "A university intelligence engine frontend portal",
+        longDescription: "UniZ is a comprehensive university intelligence engine and administration portal. As a frontend developer, I built the Student and Admin/Faculty portals focusing on a responsive, high-performance UI to seamlessly interact with complex academic workflows and backend microservices.",
+        meta: "Education Portal",
+        tags: unizTags,
+        techIcons: unizIcons,
+        imageSrc: "https://res.cloudinary.com/diipfzmyj/image/upload/v1779180449/Screenshot_2026-05-19_at_14.17.21_ku9o3w.png",
+        href: "https://uniz.rguktong.in",
+    }
 ];
 
 const Projects = () => {
